@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, Radio, Modal} from 'antd'
+import { Card, Button, Modal} from 'antd'
 import '../style/ui.less'
 
 export default class Modals extends React.Component {

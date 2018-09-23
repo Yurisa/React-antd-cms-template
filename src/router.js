@@ -3,8 +3,10 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import App from './App'
 import Admin from './admin'
 import Login from './pages/login'
-import Buttons from './pages/ui/butttons'
+import Buttons from './pages/ui/Butttons'
 import Modals from './pages/ui/Modals'
+import Loadings from './pages/ui/Loadings'
+import Notice from './pages/ui/Notice'
 import NoMatch from './pages/nomatch'
 import Home from './pages/home'
 export default class IRouter extends React.Component {
@@ -20,6 +22,8 @@ export default class IRouter extends React.Component {
                                     <Route path="/home" component={Home}></Route>
                                     <Route path="/ui/buttons" component={Buttons}></Route>
                                     <Route path="/ui/modals" component={Modals}></Route>
+                                    <Route path="/ui/loadings" component={Loadings}></Route>
+                                    <Route path="/ui/notification" component={Notice}></Route>
                                     <Route component={NoMatch}></Route>
                                 </Switch>
                             </Admin>
